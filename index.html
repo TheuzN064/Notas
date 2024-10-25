@@ -236,11 +236,10 @@
     </table>
     <button onclick="calcularMedias(), salvarDados()">Calcular Médias</button>
     <script>
-    function perguntarNome(){
+    
     var name = prompt("Qual é o seu nome?");
     if (name == null){
-        return perguntarNome();
-        }
+        return name;
         }
         function calcularMedia(notas) {
             let soma = 0;
