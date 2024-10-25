@@ -93,155 +93,156 @@
 
 <body>
     <h2>Calculadora de Média por Matéria</h2>
-    <table>
-        <thead>
-            <tr>
-                <th>Matéria</th>
-                <th>1º Bimestre</th>
-                <th>2º Bimestre</th>
-                <th>Soma</th>
-                <th>Falta</th>
-            </tr>
-        </thead>
-        <tbody>
-            <!-- História I -->
-            <tr>
-                <td>História I</td>
-                <td><input type="number" id="hist1_1"></td>
-                <td><input type="number" id="hist1_2"></td>
-                <td id="media-historia1"></td>
-                <td id="falta-historia1"></td>
-            </tr>
-            <!-- Biologia III -->
-            <tr>
-                <td>Biologia III</td>
-                <td><input type="number" id="bio_1"></td>
-                <td><input type="number" id="bio_2"></td>
-                <td id="media-biologia"></td>
-                <td id="falta-biologia"></td>
-            </tr>
-            <!-- Educação Física III -->
-            <tr>
-                <td>Educação Física III</td>
-                <td><input type="number" id="edfis_1"></td>
-                <td><input type="number" id="edfis_2"></td>
-                <td id="media-educfisica"></td>
-                <td id="falta-educfisica"></td>
-            </tr>
-            <!-- Filosofia -->
-            <tr>
-                <td>Filosofia</td>
-                <td><input type="number" id="fil_1"></td>
-                <td><input type="number" id="fil_2"></td>
-                <td id="media-filosofia"></td>
-                <td id="falta-filosofia"></td>
-            </tr>
-            <!-- Física III -->
-            <tr>
-                <td>Física III</td>
-                <td><input type="number" id="fis_1"></td>
-                <td><input type="number" id="fis_2"></td>
-                <td id="media-fisica"></td>
-                <td id="falta-fisica"></td>
-            </tr>
-            <!-- Espanhol II -->
-            <tr>
-                <td>Espanhol II</td>
-                <td><input type="number" id="esp_1"></td>
-                <td><input type="number" id="esp_2"></td>
-                <td id="media-espanhol"></td>
-                <td id="falta-espanhol"></td>
-            </tr>
-            <!-- Língua Inglesa II -->
-            <tr>
-                <td>Língua Inglesa II</td>
-                <td><input type="number" id="ing_1"></td>
-                <td><input type="number" id="ing_2"></td>
-                <td id="media-ingles"></td>
-                <td id="falta-ingles"></td>
-            </tr>
-            <!-- Língua Portuguesa III -->
-            <tr>
-                <td>Língua Portuguesa III</td>
-                <td><input type="number" id="pt_1"></td>
-                <td><input type="number" id="pt_2"></td>
-                <td id="media-portuguesa"></td>
-                <td id="falta-portuguesa"></td>
-            </tr>
-            <!-- Matemática III -->
-            <tr>
-                <td>Matemática III</td>
-                <td><input type="number" id="mat_1"></td>
-                <td><input type="number" id="mat_2"></td>
-                <td id="media-matematica"></td>
-                <td id="falta-matematica"></td>
-            </tr>
-            <!-- Química III -->
-            <tr>
-                <td>Química III</td>
-                <td><input type="number" id="qui_1"></td>
-                <td><input type="number" id="qui_2"></td>
-                <td id="media-quimica"></td>
-                <td id="falta-quimica"></td>
-            </tr>
-            <!-- Tópicos de Ciência da Natureza II -->
-            <tr>
-                <td>Tópicos de Ciência da Natureza II</td>
-                <td><input type="number" id="nat1"></td>
-                <td><input type="number" id="nat2"></td>
-                <td id="media-natureza"></td>
-                <td id="falta-natureza"></td>
-            </tr>
-            <!-- Desenvolvimento de Projeto de Sistemas -->
-            <tr>
-                <td>Desenvolvimento de Projeto de Sistemas</td>
-                <td><input type="number" id="proj1"></td>
-                <td><input type="number" id="proj2"></td>
-                <td id="media-projetosistemas"></td>
-                <td id="falta-projetosistemas"></td>
-            </tr>
-            <!-- Linguagem de Programação -->
-            <tr>
-                <td>Linguagem de Programação</td>
-                <td><input type="number" id="prog1"></td>
-                <td><input type="number" id="prog2"></td>
-                <td id="media-linguagemprog"></td>
-                <td id="falta-linguagemprog"></td>
-            </tr>
-            <!-- Optativa -->
-            <tr>
-                <td>Optativa</td>
-                <td><input type="number" id="opt1"></td>
-                <td><input type="number" id="opt2"></td>
-                <td id="media-optativa"></td>
-                <td id="falta-optativa"></td>
-            </tr>
-            <!-- Redes de Computadores II -->
-            <tr>
-                <td>Redes de Computadores II</td>
-                <td><input type="number" id="redes1"></td>
-                <td><input type="number" id="redes2"></td>
-                <td id="media-redes"></td>
-                <td id="falta-redes"></td>
-            </tr>
-            <!-- Tópicos Especiais III -->
-            <tr>
-                <td>Tópicos Especiais III</td>
-                <td><input type="number" id="topicos1"></td>
-                <td><input type="number" id="topicos2"></td>
-                <td id="media-topicos"></td>
-                <td id="falta-topicos"></td>
-            </tr>
-            <tr>
-                <td>Seu nome</td>
-                <td><input type="text" id="nome" required placehold = "Nome" ></td>
-            </tr>
-        </tbody>
-    </table>
-    <button onclick="calcularMedias(), salvarDados()">Calcular Médias</button>
-    <script>
+    <form action="">
+        <table>
+            <thead>
+                <tr>
+                    <th>Matéria</th>
+                    <th>1º Bimestre</th>
+                    <th>2º Bimestre</th>
+                    <th>Soma</th>
+                    <th>Falta</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- História I -->
+                <tr>
+                    <td>História I</td>
+                    <td><input type="number" id="hist1_1"></td>
+                    <td><input type="number" id="hist1_2"></td>
+                    <td id="media-historia1"></td>
+                    <td id="falta-historia1"></td>
+                </tr>
+                <!-- Biologia III -->
+                <tr>
+                    <td>Biologia III</td>
+                    <td><input type="number" id="bio_1"></td>
+                    <td><input type="number" id="bio_2"></td>
+                    <td id="media-biologia"></td>
+                    <td id="falta-biologia"></td>
+                </tr>
+                <!-- Educação Física III -->
+                <tr>
+                    <td>Educação Física III</td>
+                    <td><input type="number" id="edfis_1"></td>
+                    <td><input type="number" id="edfis_2"></td>
+                    <td id="media-educfisica"></td>
+                    <td id="falta-educfisica"></td>
+                </tr>
+                <!-- Filosofia -->
+                <tr>
+                    <td>Filosofia</td>
+                    <td><input type="number" id="fil_1"></td>
+                    <td><input type="number" id="fil_2"></td>
+                    <td id="media-filosofia"></td>
+                    <td id="falta-filosofia"></td>
+                </tr>
+                <!-- Física III -->
+                <tr>
+                    <td>Física III</td>
+                    <td><input type="number" id="fis_1"></td>
+                    <td><input type="number" id="fis_2"></td>
+                    <td id="media-fisica"></td>
+                    <td id="falta-fisica"></td>
+                </tr>
+                <!-- Espanhol II -->
+                <tr>
+                    <td>Espanhol II</td>
+                    <td><input type="number" id="esp_1"></td>
+                    <td><input type="number" id="esp_2"></td>
+                    <td id="media-espanhol"></td>
+                    <td id="falta-espanhol"></td>
+                </tr>
+                <!-- Língua Inglesa II -->
+                <tr>
+                    <td>Língua Inglesa II</td>
+                    <td><input type="number" id="ing_1"></td>
+                    <td><input type="number" id="ing_2"></td>
+                    <td id="media-ingles"></td>
+                    <td id="falta-ingles"></td>
+                </tr>
+                <!-- Língua Portuguesa III -->
+                <tr>
+                    <td>Língua Portuguesa III</td>
+                    <td><input type="number" id="pt_1"></td>
+                    <td><input type="number" id="pt_2"></td>
+                    <td id="media-portuguesa"></td>
+                    <td id="falta-portuguesa"></td>
+                </tr>
+                <!-- Matemática III -->
+                <tr>
+                    <td>Matemática III</td>
+                    <td><input type="number" id="mat_1"></td>
+                    <td><input type="number" id="mat_2"></td>
+                    <td id="media-matematica"></td>
+                    <td id="falta-matematica"></td>
+                </tr>
+                <!-- Química III -->
+                <tr>
+                    <td>Química III</td>
+                    <td><input type="number" id="qui_1"></td>
+                    <td><input type="number" id="qui_2"></td>
+                    <td id="media-quimica"></td>
+                    <td id="falta-quimica"></td>
+                </tr>
+                <!-- Tópicos de Ciência da Natureza II -->
+                <tr>
+                    <td>Tópicos de Ciência da Natureza II</td>
+                    <td><input type="number" id="nat1"></td>
+                    <td><input type="number" id="nat2"></td>
+                    <td id="media-natureza"></td>
+                    <td id="falta-natureza"></td>
+                </tr>
+                <!-- Desenvolvimento de Projeto de Sistemas -->
+                <tr>
+                    <td>Desenvolvimento de Projeto de Sistemas</td>
+                    <td><input type="number" id="proj1"></td>
+                    <td><input type="number" id="proj2"></td>
+                    <td id="media-projetosistemas"></td>
+                    <td id="falta-projetosistemas"></td>
+                </tr>
+                <!-- Linguagem de Programação -->
+                <tr>
+                    <td>Linguagem de Programação</td>
+                    <td><input type="number" id="prog1"></td>
+                    <td><input type="number" id="prog2"></td>
+                    <td id="media-linguagemprog"></td>
+                    <td id="falta-linguagemprog"></td>
+                </tr>
+                <!-- Optativa -->
+                <tr>
+                    <td>Optativa</td>
+                    <td><input type="number" id="opt1"></td>
+                    <td><input type="number" id="opt2"></td>
+                    <td id="media-optativa"></td>
+                    <td id="falta-optativa"></td>
+                </tr>
+                <!-- Redes de Computadores II -->
+                <tr>
+                    <td>Redes de Computadores II</td>
+                    <td><input type="number" id="redes1"></td>
+                    <td><input type="number" id="redes2"></td>
+                    <td id="media-redes"></td>
+                    <td id="falta-redes"></td>
+                </tr>
+                <!-- Tópicos Especiais III -->
+                <tr>
+                    <td>Tópicos Especiais III</td>
+                    <td><input type="number" id="topicos1"></td>
+                    <td><input type="number" id="topicos2"></td>
+                    <td id="media-topicos"></td>
+                    <td id="falta-topicos"></td>
+                </tr>
+                <tr>
+                    <td>Seu nome</td>
+                    <td><input type="text" id="nome" required></td>
+                </tr>
+            </tbody>
+        </table>
+        <button onclick="calcularMedias(), salvarDados()">Calcular Médias</button>
+    </form>
     
-    var name = prompt("Qual é o seu nome?");
+    <script>
 
         function calcularMedia(notas) {
             let soma = 0;
